@@ -139,6 +139,7 @@ def solve_all(boards, name='', showif=0.0):
     When showif is None, don't display any puzzles."""
 
     def time_solve(board):
+        global ls1, results, times
         start = time.time()
         values = solve(board)
         t = time.time() - start
@@ -323,4 +324,3 @@ while mega:
 #solve_all(from_file("files/hard.txt"), "hard", 0.0)
 
 #solve_all([random_puzzle() for _ in range(99)], "random", 1.0)
-
