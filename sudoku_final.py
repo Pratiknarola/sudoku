@@ -260,7 +260,7 @@ while mega:
                     continue
                 if more_break1:
                     break
-                open('temp.txt', 'x')
+                #open('temp.txt', 'x')
                 temp = open('temp.txt', 'w')
                 temp.write(userboard)
                 temp.close()
